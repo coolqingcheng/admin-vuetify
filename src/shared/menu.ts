@@ -8,6 +8,8 @@ interface MenuRaw {
     children?: MenuRaw[]
 }
 
+
+// icon需要以mdi-开头  图标地址 https://materialdesignicons.com/
 const menu: MenuRaw[] = [
     {
         text: '仪表盘',
@@ -20,7 +22,7 @@ const menu: MenuRaw[] = [
     {
         text: '关于',
         index:'2',
-        icon: 'account-question',
+        icon: 'mdi-domain',
         route: {
             path:'/admin/setting/system'
         }
@@ -39,7 +41,7 @@ const menu: MenuRaw[] = [
     // },
     {
         text: '博客',
-        icon: 'post',
+        icon: 'mdi-post',
         index:'3',
         children: [
             {
