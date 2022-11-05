@@ -1,11 +1,18 @@
 <template>
-  <v-app>
-    <v-main>
-      <HelloWorld />
-    </v-main>
-  </v-app>
+    <RouterView></RouterView>
 </template>
 
 <script setup lang="ts">
-  import HelloWorld from '@/components/HelloWorld.vue'
+
+
 </script>
+
+<style>
+html,
+body,
+#app {
+    height: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+</style>
