@@ -55,7 +55,11 @@ const login = () => {
     form.value?.validate().then(res => {
         console.log(res)
         if (res.valid) {
-            route.replace("/admin")
+            loading.value = true
+            setTimeout(() => {
+                loading.value = false
+                route.replace("/admin")
+            }, 3000);
         }
     })
 }
