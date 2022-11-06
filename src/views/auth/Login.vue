@@ -30,6 +30,8 @@ import { reactive, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { VForm } from "vuetify/lib/components/VForm/index"
 
+import {useTestStore } from "@/store/TestStore"
+
 const form = ref<VForm>();
 
 const loginForm = ref(false)
@@ -50,6 +52,8 @@ const rules = {
 const loading = ref(false)
 
 const route = useRouter();
+
+const testStore = useTestStore();
 
 const login = () => {
     form.value?.validate().then(res => {
